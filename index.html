@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hotel Aaditya Residency — 3-star executive hotel in the heart of Dumka, Jharkhand. 24 AC rooms, multi-cuisine dining and banquet facilities." />
+  <title>Hotel Aaditya Residency | Dumka</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#17211b;--muted:#667168;--cream:#f7f3ea;--paper:#fffdf8;--gold:#b18a4a;--gold2:#d0ae6d;--line:#e7e0d3}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font-family:Inter,system-ui,sans-serif;line-height:1.6}
+    h1,h2,h3,.brand{font-family:"Cormorant Garamond",serif;line-height:.98;margin:0}h2{font-size:clamp(2.5rem,5vw,4.3rem);font-weight:600}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;font-weight:700;color:var(--gold)}
+    a{color:inherit;text-decoration:none}.container{width:min(1180px,calc(100% - 40px));margin:auto}
+    header{position:fixed;z-index:20;top:0;width:100%;transition:.3s;background:linear-gradient(180deg,rgba(8,13,10,.75),transparent)}header.scrolled{background:rgba(20,28,23,.96);backdrop-filter:blur(14px)}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;color:#fff}.brand{font-size:1.65rem;font-weight:700;letter-spacing:.02em}.brand span{display:block;font-family:Inter;font-size:.55rem;letter-spacing:.3em;text-transform:uppercase;color:#d7bf8f;margin-top:4px}
+    .links{display:flex;gap:27px;align-items:center;font-size:.82rem;font-weight:600}.links a{opacity:.9}.links a:hover{color:#e1c27f}.menu{display:none;background:none;border:0;color:#fff;font-size:1.5rem}
+    .hero{min-height:92vh;display:grid;place-items:center;color:#fff;position:relative;background:linear-gradient(90deg,rgba(9,17,12,.78),rgba(9,17,12,.24)),url("https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=2000&q=85") center/cover}
+    .hero:after{content:"";position:absolute;inset:auto 0 0;height:140px;background:linear-gradient(transparent,var(--paper))}
+    .hero-content{position:relative;z-index:1;width:min(850px,100%);margin-top:90px}.hero h1{font-size:clamp(4rem,9vw,7.5rem);max-width:800px}.hero p{font-size:1.05rem;max-width:580px;color:#f0eee7;margin:24px 0 30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--gold);background:var(--gold);color:#fff;padding:14px 22px;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;cursor:pointer}.btn.alt{background:transparent;border-color:#fff}.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+    .quick{position:relative;z-index:3;margin-top:-42px}.quick-grid{background:#fff;box-shadow:0 18px 50px #17211b18;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}.quick-item{padding:22px 25px;border-right:1px solid var(--line)}.quick-item:last-child{border:0}.quick strong{display:block;font-family:"Cormorant Garamond";font-size:1.45rem}.quick small{color:var(--muted)}
+    section{padding:105px 0}.intro{display:grid;grid-template-columns:1fr 1.15fr;gap:90px;align-items:center}.intro-copy p{color:var(--muted);font-size:1rem;max-width:590px}.stats{display:flex;gap:42px;margin-top:35px}.stat b{font:700 2.2rem "Cormorant Garamond";display:block;color:var(--gold)}.stat span{font-size:.7rem;text-transform:uppercase;letter-spacing:.13em;color:var(--muted)}
+    .image-stack{position:relative;padding:0 0 60px 60px}.image-stack img{width:100%;height:530px;object-fit:cover}.image-stack .small{position:absolute;width:46%;height:245px;left:0;bottom:0;border:12px solid var(--paper);object-fit:cover}
+    .cream{background:var(--cream)}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:48px}.section-head p{max-width:440px;color:var(--muted);margin:0}
+    .rooms{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.room{background:#fff;border:1px solid var(--line);overflow:hidden}.room img{width:100%;height:240px;object-fit:cover}.room-body{padding:22px}.room h3{font-size:1.75rem}.room p{font-size:.82rem;color:var(--muted);min-height:55px}.room-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:15px;font-size:.72rem;color:var(--muted)}.room-foot b{font-size:.95rem;color:var(--gold)}
+    .experience{display:grid;grid-template-columns:1.05fr .95fr;min-height:610px}.experience-img{background:url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=85") center/cover}.experience-copy{padding:80px max(40px,7vw);background:#18221c;color:#fff;display:flex;flex-direction:column;justify-content:center}.experience-copy p{color:#c7cec8;max-width:500px}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:25px}.feature{border-top:1px solid #ffffff24;padding-top:14px;font-size:.8rem}
+    .events{display:grid;grid-template-columns:1fr 1fr;gap:22px}.event{min-height:320px;position:relative;color:#fff;overflow:hidden;display:flex;align-items:end;padding:30px;background-size:cover;background-position:center}.event:before{content:"";position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,0,0,.75))}.event > div{position:relative}.event h3{font-size:2.3rem}.event p{margin:8px 0 0;color:#eee;font-size:.83rem}.event:nth-child(1){background-image:url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1200&q=85")}.event:nth-child(2){background-image:url("https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85")}
+    .amenities{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line)}.amenity{padding:27px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.amenity:nth-child(4n){border-right:0}.amenity b{font-size:.85rem}.amenity span{display:block;color:var(--muted);font-size:.76rem;margin-top:5px}
+    .reviews{display:grid;grid-template-columns:.75fr 1.25fr;gap:80px;align-items:start}.rating{font:600 5rem "Cormorant Garamond";color:var(--gold)}.stars{color:var(--gold);letter-spacing:.18em}.review-list{display:grid;grid-template-columns:1fr 1fr;gap:20px}.review{padding:28px;background:var(--cream);border:1px solid var(--line)}.review p{font-family:"Cormorant Garamond";font-size:1.35rem;margin:12px 0}.review small{color:var(--muted)}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:0}.contact-copy{background:#18221c;color:#fff;padding:70px}.contact-copy p{color:#c7cec8}.contact-details{margin-top:30px;display:grid;gap:15px}.contact-details a:hover{color:#d8bd80}.map{min-height:470px}.map iframe{width:100%;height:100%;min-height:470px;border:0;filter:saturate(.7)}
+    footer{background:#0e1511;color:#c7cec8;padding:40px 0}.footer{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer small{font-size:.72rem}.footer a{color:#d8bd80}
+    .modal{position:fixed;inset:0;background:#0b110ddd;z-index:50;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-box{background:#fffdf8;width:min(520px,100%);padding:36px;position:relative}.close{position:absolute;right:18px;top:12px;border:0;background:none;font-size:1.6rem;cursor:pointer}.form{display:grid;gap:14px;margin-top:24px}.form input,.form select{width:100%;padding:13px;border:1px solid var(--line);background:#fff;font:inherit}.form .btn{width:100%}.notice{font-size:.72rem;color:var(--muted);margin:0}
+    @media(max-width:900px){.links{display:none}.menu{display:block}.links.open{display:flex;position:absolute;top:82px;left:0;right:0;background:#18221c;padding:20px;flex-direction:column}.quick-grid{grid-template-columns:1fr 1fr}.quick-item:nth-child(2){border-right:0}.intro,.experience,.reviews,.contact{grid-template-columns:1fr}.rooms{grid-template-columns:1fr 1fr}.amenities{grid-template-columns:1fr 1fr}.amenity:nth-child(4n){border-right:1px solid var(--line)}.amenity:nth-child(2n){border-right:0}.review-list{grid-template-columns:1fr}.image-stack{margin-top:10px}.experience-img{min-height:400px}.contact-copy{padding:55px 30px}}
+    @media(max-width:600px){.container{width:min(100% - 28px,1180px)}section{padding:75px 0}.hero{min-height:86vh}.hero h1{font-size:4.1rem}.hero-content{margin-top:70px}.quick-grid{grid-template-columns:1fr 1fr}.quick-item{padding:17px}.quick-item:nth-child(3),.quick-item:nth-child(4){border-top:1px solid var(--line)}.rooms,.events,.amenities{grid-template-columns:1fr}.amenity,.amenity:nth-child(2n),.amenity:nth-child(4n){border-right:0}.section-head{display:block}.section-head p{margin-top:18px}.stats{gap:20px}.image-stack{padding:0 0 35px 25px}.image-stack img{height:390px}.image-stack .small{height:160px;border-width:8px}.footer{display:block}.footer small{display:block;margin-top:15px}}
+  </style>
+</head>
+<body>
+<header id="header"><div class="container nav">
+  <a class="brand" href="#home">Aaditya Residency<span>Dumka · Jharkhand</span></a>
+  <nav class="links" id="links"><a href="#stay">Stay</a><a href="#dining">Dining</a><a href="#events">Events</a><a href="#amenities">Amenities</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a><a class="btn" href="#" onclick="openBooking(event)">Book a Room</a></nav>
+  <button class="menu" onclick="document.getElementById('links').classList.toggle('open')" aria-label="Menu">☰</button>
+</div></header>
+
+<main id="home">
+<section class="hero"><div class="container hero-content">
+  <div class="eyebrow">Executive comfort · Since 2017</div>
+  <h1>A refined stay in the heart of Dumka.</h1>
+  <p>Hotel Aaditya Residency brings 3-star executive hospitality to Thana Road — with 24 fully air-conditioned rooms, all-day dining and versatile spaces for celebrations and business.</p>
+  <a class="btn" href="#" onclick="openBooking(event)">Check availability</a>
+  <a class="btn alt" href="#stay" style="margin-left:10px">Explore rooms</a>
+</div></section>
+
+<div class="quick"><div class="container quick-grid">
+  <div class="quick-item"><small>Rooms</small><strong>24 AC Rooms</strong></div>
+  <div class="quick-item"><small>Dining</small><strong>The Pakawan</strong></div>
+  <div class="quick-item"><small>Location</small><strong>Central Dumka</strong></div>
+  <div class="quick-item"><small>Reception</small><strong>Open 24 Hours</strong></div>
+</div></div>
+
+<section><div class="container intro">
+  <div class="intro-copy"><div class="eyebrow">Welcome to Aaditya</div><h2>Comfort that keeps you close to everything.</h2><p>Set on Thana Road, near Sidhu Kanhu High School and opposite V2, Aaditya Residency is designed for travellers who want a convenient city stay without giving up space, service or modern essentials.</p><div class="stats"><div class="stat"><b>2017</b><span>Established</span></div><div class="stat"><b>3★</b><span>Executive hotel</span></div><div class="stat"><b>24</b><span>Rooms</span></div></div></div>
+  <div class="image-stack"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85" alt="Hotel exterior and hospitality"><img class="small" src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=700&q=85" alt="Comfortable hotel room"></div>
+</div></section>
+
+<section class="cream" id="stay"><div class="container">
+  <div class="section-head"><div><div class="eyebrow">Stay your way</div><h2>Rooms & suites</h2></div><p>Four room categories, each built around practical comfort for business trips, family stays and longer visits.</p></div>
+  <div class="rooms">
+    <article class="room"><img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=900&q=85" alt="Standard AC room"><div class="room-body"><h3>Standard AC</h3><p>A comfortable base with air conditioning, TV, intercom, modern bathroom and hot water.</p><div class="room-foot"><span>From</span><b>₹2,099 / night*</b></div></div></article>
+    <article class="room"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=85" alt="Executive AC room"><div class="room-body"><h3>Executive AC</h3><p>More room to work and unwind, with a dedicated work desk and convenient in-room amenities.</p><div class="room-foot"><span>Executive comfort</span><b>Enquire</b></div></div></article>
+    <article class="room"><img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=85" alt="Deluxe family room"><div class="room-body"><h3>Deluxe Family</h3><p>Designed for families who need extra space and an easy, comfortable city stay.</p><div class="room-foot"><span>Family stay</span><b>Enquire</b></div></div></article>
+    <article class="room"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=85" alt="Premium suite"><div class="room-body"><h3>Premium Suite</h3><p>A more spacious stay for guests looking for an elevated room experience in Dumka.</p><div class="room-foot"><span>Premium</span><b>Enquire</b></div></div></article>
+  </div>
+  <p style="font-size:.7rem;color:var(--muted);margin-top:18px">*Indicative starting price based on supplied booking information; final rates may vary by date and availability.</p>
+</div></section>
+
+<section id="dining" style="padding:0"><div class="experience"><div class="experience-img"></div><div class="experience-copy"><div class="eyebrow">The Pakawan Restaurant</div><h2>Good food. No need to leave.</h2><p>Our in-house multi-cuisine restaurant serves Indian, Chinese and local flavours — from breakfast through meals and catering for gatherings.</p><div class="feature-list"><div class="feature">Indian & Chinese</div><div class="feature">Multi-cuisine menu</div><div class="feature">Breakfast service</div><div class="feature">Event catering</div></div><a href="#contact" class="btn" style="margin-top:30px;width:max-content">Plan a meal or event</a></div></div></section>
+
+<section id="events"><div class="container"><div class="section-head"><div><div class="eyebrow">Gather beautifully</div><h2>Meetings & celebrations</h2></div><p>Functional banquet and meeting spaces for birthdays, anniversaries, ring ceremonies and corporate dealer meetings.</p></div><div class="events"><article class="event"><div><div class="eyebrow" style="color:#e0c07d">Celebrations</div><h3>Moments worth gathering for.</h3><p>Customisable catering, music setup and a bridal suite for social occasions.</p></div></article><article class="event"><div><div class="eyebrow" style="color:#e0c07d">Business</div><h3>Meet with ease.</h3><p>Practical meeting facilities with hospitality support and flexible catering packages.</p></div></article></div></div></section>
+
+<section class="cream" id="amenities"><div class="container"><div class="section-head"><div><div class="eyebrow">Everything you need</div><h2>Hotel amenities</h2></div><p>Thoughtful essentials for a smoother stay, whether you are here for work or leisure.</p></div><div class="amenities">
+  <div class="amenity"><b>Free Wi-Fi</b><span>High-speed connectivity</span></div><div class="amenity"><b>24-Hour Reception</b><span>Help whenever you need it</span></div><div class="amenity"><b>Power Backup</b><span>24/7 generator backup</span></div><div class="amenity"><b>Parking</b><span>On-site & secured options</span></div>
+  <div class="amenity"><b>Elevator / Lift</b><span>Easy access between floors</span></div><div class="amenity"><b>Room Service</b><span>24-hour in-room service</span></div><div class="amenity"><b>Hot Water</b><span>Modern bathrooms with geyser</span></div><div class="amenity"><b>Car Rental Desk</b><span>Local travel assistance</span></div>
+  <div class="amenity"><b>Wheelchair Access</b><span>Accessibility support</span></div><div class="amenity"><b>Mini Refrigerator</b><span>Added room convenience</span></div><div class="amenity"><b>Work Desk</b><span>Business-friendly rooms</span></div><div class="amenity"><b>Government ID</b><span>Required for staying guests</span></div>
+</div></div></section>
+
+<section id="reviews"><div class="container reviews"><div><div class="eyebrow">Guest perspective</div><h2>Comfort people notice.</h2><div class="rating">3.8</div><div class="stars">★★★★★</div><p style="color:var(--muted);font-size:.78rem">Representative rating range across major booking platforms, based on supplied information.</p></div><div class="review-list">
+  <article class="review"><div class="stars">★★★★★</div><p>“Spacious rooms, clean stay and helpful staff.”</p><small>Guest feedback theme</small></article>
+  <article class="review"><div class="stars">★★★★★</div><p>“The location on the main road makes everything convenient.”</p><small>Guest feedback theme</small></article>
+  <article class="review"><div class="stars">★★★★☆</div><p>“Food at Pakawan is a highlight, especially the local flavours.”</p><small>Guest feedback theme</small></article>
+  <article class="review"><div class="stars">★★★★☆</div><p>“Service can slow down a little during busy peak hours.”</p><small>Constructive feedback theme</small></article>
+</div></div></section>
+
+<section id="contact" style="padding-bottom:0"><div class="contact"><div class="contact-copy"><div class="eyebrow">Find us in Dumka</div><h2>Stay central. Stay connected.</h2><p>Thana Road, near Sidhu Kanhu High School, opposite V2, Dumka, Jharkhand — 814101.</p><div class="contact-details"><a href="tel:+916434226077">+91 6434 226 077</a><a href="tel:+917061533300">+91 7061 533 300</a><a href="mailto:aadityaresidencydumka@gmail.com">aadityaresidencydumka@gmail.com</a><a href="mailto:hotelaadityadmk@gmail.com">hotelaadityadmk@gmail.com</a></div><a class="btn" style="margin-top:30px" href="https://www.google.com/maps/search/?api=1&query=Hotel+Aaditya+Residency,+Thana+Road,+Dumka,+Jharkhand" target="_blank" rel="noopener">Open in Google Maps</a></div><div class="map"><iframe title="Hotel Aaditya Residency location" src="https://www.google.com/maps?q=Hotel%20Aaditya%20Residency%2C%20Thana%20Road%2C%20Dumka%2C%20Jharkhand&output=embed" loading="lazy"></iframe></div></div></section>
+</main>
+
+<footer><div class="container footer"><div><div class="brand">Aaditya Residency</div><small>Executive hospitality in Dumka, Jharkhand.</small></div><small>© <span id="year"></span> Hotel Aaditya Residency · <a href="https://hotelaadityaresidency.com" target="_blank" rel="noopener">hotelaadityaresidency.com</a></small></div></footer>
+
+<div class="modal" id="bookingModal"><div class="modal-box"><button class="close" onclick="closeBooking()" aria-label="Close">×</button><div class="eyebrow">Demo booking enquiry</div><h2 style="font-size:3rem">Plan your stay.</h2><p class="notice">This demo form does not process payments or create live reservations.</p><form class="form" onsubmit="submitBooking(event)"><input required name="name" placeholder="Your name"><input required type="tel" name="phone" placeholder="Phone number"><div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><input required type="date" name="checkin"><input required type="date" name="checkout"></div><select name="room"><option>Any room category</option><option>Standard AC</option><option>Executive AC</option><option>Deluxe Family</option><option>Premium Suite</option></select><button class="btn" type="submit">Send enquiry</button></form></div></div>
+<script>
+  const header=document.getElementById('header'); window.addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>30));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  function openBooking(e){e&&e.preventDefault();document.getElementById('bookingModal').classList.add('open')}
+  function closeBooking(){document.getElementById('bookingModal').classList.remove('open')}
+  function submitBooking(e){e.preventDefault();const d=new FormData(e.target);const msg='Hello Hotel Aaditya Residency, I would like to enquire about a room. Name: '+d.get('name')+', Phone: '+d.get('phone')+', Check-in: '+d.get('checkin')+', Check-out: '+d.get('checkout')+', Room: '+d.get('room');window.location.href='https://wa.me/917061533300?text='+encodeURIComponent(msg)}
+  document.getElementById('bookingModal').addEventListener('click',e=>{if(e.target.id==='bookingModal')closeBooking()});
+</script>
+</body>
+</html>
